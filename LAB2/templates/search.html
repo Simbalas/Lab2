@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Search</title>
+</head>
+<body>
+    <h1>Book Search</h1>
+    <form method="POST" action="/search">
+        <label for="query">Enter book title, author, or category:</label>
+        <input type="text" name="query" id="query" placeholder="Search...">
+        <button type="submit">Search</button>
+    </form>
+    <p><a href="{{ url_for('user_menu') }}">Back to User Menu</a></p>
+</body>
+</html>
+

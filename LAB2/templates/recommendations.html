@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recommended Books</title>
+</head>
+<body>
+    <h1>Recommended Books</h1>
+    
+    <ul>
+        {% for book in recommended_books %}
+            <li>Title: {{ book[0] }}, Author: {{ book[1] }}</li>
+        {% endfor %}
+    </ul>
+    <p><a href="{{ url_for('user_menu') }}">User Menu</a></p>
+</body>
+</html>

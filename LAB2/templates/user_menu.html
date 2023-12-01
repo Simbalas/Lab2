@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Menu</title>
+</head>
+<body>
+    <h1>User Menu</h1>
+    
+    <ul>
+        <li><a href="{{ url_for('search_page') }}">Book Search</a></li>
+        <li>
+            <form method="get" action="{{ url_for('recommend') }}">
+                <label for="book_title">Enter a book title for recommendations:</label>
+                <input type="text" id="book_title" name="book_title" required>
+                <button type="submit">Book Recommendation</button>
+            </form>
+        </li>
+        <!-- Add more menu items as needed -->
+    </ul>
+
+    <form method="post" action="{{ url_for('logout') }}">
+        <button type="submit">Logout</button>
+    </form>
+</body>
+</html>
